@@ -21,7 +21,9 @@ public class NumberConverterTest {
     return Stream.of(
         Arguments.of(1, "I"),
         Arguments.of(2, "II"),
-        Arguments.of(3, "III"));
+        Arguments.of(3, "III"),
+        Arguments.of(5, "V")
+    );
   }
 
   @ParameterizedTest
