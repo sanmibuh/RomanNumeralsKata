@@ -19,4 +19,11 @@ public class NumberConverterTest {
     final String roman = numberConverter.toRoman(1);
     assertEquals("I", roman);
   }
+
+  @Test
+  public void testNumber2() {
+    final String roman = numberConverter.toRoman(2);
+    assertEquals("II", roman);
+  }
+
 }
