@@ -24,7 +24,8 @@ public class NumberConverterTest {
         Arguments.of(3, "III"),
         Arguments.of(5, "V"),
         Arguments.of(6, "VI"),
-        Arguments.of(7, "VII")
+        Arguments.of(7, "VII"),
+        Arguments.of(8, "VIII")
     );
   }
 
