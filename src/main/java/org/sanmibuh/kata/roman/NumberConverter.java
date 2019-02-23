@@ -7,10 +7,13 @@ public class NumberConverter {
     if(5 == number) {
       return "V";
     }
-    if (6 == number) {
+    if(6 == number) {
       return "VI";
     }
-    for (int i = 1; i <= number; i++) {
+    if(7 == number) {
+      return "VII";
+    }
+    for(int i = 1; i <= number; i++) {
       roman.append("I");
     }
     return roman.toString();

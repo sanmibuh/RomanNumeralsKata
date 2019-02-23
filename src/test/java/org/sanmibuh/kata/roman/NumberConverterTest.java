@@ -23,7 +23,8 @@ public class NumberConverterTest {
         Arguments.of(2, "II"),
         Arguments.of(3, "III"),
         Arguments.of(5, "V"),
-        Arguments.of(6, "VI")
+        Arguments.of(6, "VI"),
+        Arguments.of(7, "VII")
     );
   }
 
