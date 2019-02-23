@@ -6,6 +6,9 @@ public class NumberConverter {
     if(2 == number) {
       return "II";
     }
+    if (3 == number) {
+      return "III";
+    }
     return "I";
   }
 }

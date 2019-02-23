@@ -20,7 +20,8 @@ public class NumberConverterTest {
   private static Stream<Arguments> numbersToConvert() {
     return Stream.of(
         Arguments.of(1, "I"),
-        Arguments.of(2, "II"));
+        Arguments.of(2, "II"),
+        Arguments.of(3, "III"));
   }
 
   @ParameterizedTest
