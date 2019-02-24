@@ -15,6 +15,9 @@ public class NumberConverter {
     if (number == 100) {
       return "C";
     }
+    if (number == 500) {
+      return "D";
+    }
     return "I";
   }
 
