@@ -20,7 +20,8 @@ public class NumberConverterTest {
   private static Stream<Arguments> numbersToConvert() {
     return Stream.of(
         Arguments.of(1, "I"),
-        Arguments.of(5, "V")
+        Arguments.of(5, "V"),
+        Arguments.of(10, "X")
     );
   }
 
