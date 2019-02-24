@@ -9,6 +9,9 @@ public class NumberConverter {
     if (number == 10) {
       return "X";
     }
+    if (number == 50) {
+      return "L";
+    }
     return "I";
   }
 
