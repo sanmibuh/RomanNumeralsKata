@@ -12,6 +12,9 @@ public class NumberConverter {
     if (number == 50) {
       return "L";
     }
+    if (number == 100) {
+      return "C";
+    }
     return "I";
   }
 

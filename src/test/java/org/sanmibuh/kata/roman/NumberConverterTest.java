@@ -22,7 +22,8 @@ public class NumberConverterTest {
         Arguments.of(1, "I"),
         Arguments.of(5, "V"),
         Arguments.of(10, "X"),
-        Arguments.of(50, "L")
+        Arguments.of(50, "L"),
+        Arguments.of(100, "C")
     );
   }
 
