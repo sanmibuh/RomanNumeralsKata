@@ -18,6 +18,9 @@ public class NumberConverter {
     if (number == 500) {
       return "D";
     }
+    if (number == 1000) {
+      return "M";
+    }
     return "I";
   }
 
