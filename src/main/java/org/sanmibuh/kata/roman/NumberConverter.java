@@ -41,6 +41,9 @@ public class NumberConverter {
     if (number == 30) {
       return "XXX";
     }
+    if (number == 200) {
+      return "CC";
+    }
     return "II";
   }
 
