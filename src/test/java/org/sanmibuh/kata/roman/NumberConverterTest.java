@@ -33,7 +33,8 @@ public class NumberConverterTest {
         Arguments.of(500, "D"),
         Arguments.of(1000, "M"),
         Arguments.of(2000, "MM"),
-        Arguments.of(3000, "MMM")
+        Arguments.of(3000, "MMM"),
+        Arguments.of(3333, "MMMCCCXXXIII")
     );
   }
 
