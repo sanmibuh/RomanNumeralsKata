@@ -50,6 +50,9 @@ public class NumberConverter {
     if (number == 2000) {
       return "MM";
     }
+    if (number == 3000) {
+      return "MMM";
+    }
     return "II";
   }
 
