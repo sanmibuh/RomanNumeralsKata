@@ -36,6 +36,7 @@ public class NumberConverterTest {
         Arguments.of(300, "CCC"),
         Arguments.of(400, "CD"),
         Arguments.of(500, "D"),
+        Arguments.of(900, "CM"),
         Arguments.of(1000, "M"),
         Arguments.of(2000, "MM"),
         Arguments.of(3000, "MMM"),

@@ -38,6 +38,9 @@ public class NumberConverter {
     if (number == 400) {
       return "CD";
     }
+    if (number == 900) {
+      return "CM";
+    }
     Stream.of(RomanSymbol.values())
         .sorted(Collections.reverseOrder())
         .filter(romanSymbol -> number / romanSymbol.value > 0)
