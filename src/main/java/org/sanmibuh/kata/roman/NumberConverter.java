@@ -35,6 +35,9 @@ public class NumberConverter {
     if (number == 90) {
       return "XC";
     }
+    if (number == 400) {
+      return "CD";
+    }
     Stream.of(RomanSymbol.values())
         .sorted(Collections.reverseOrder())
         .filter(romanSymbol -> number / romanSymbol.value > 0)
