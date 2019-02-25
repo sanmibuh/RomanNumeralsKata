@@ -26,6 +26,9 @@ public class NumberConverter {
     if (number == 4) {
       return "IV";
     }
+    if (number == 9) {
+      return "IX";
+    }
     Stream.of(RomanSymbol.values())
         .sorted(Collections.reverseOrder())
         .filter(romanSymbol -> number / romanSymbol.value > 0)
