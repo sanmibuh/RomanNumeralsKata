@@ -28,6 +28,7 @@ public class NumberConverterTest {
         Arguments.of(10, "X"),
         Arguments.of(20, "XX"),
         Arguments.of(30, "XXX"),
+        Arguments.of(40, "XL"),
         Arguments.of(50, "L"),
         Arguments.of(100, "C"),
         Arguments.of(200, "CC"),

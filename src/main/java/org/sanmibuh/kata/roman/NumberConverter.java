@@ -29,6 +29,9 @@ public class NumberConverter {
     if (number == 9) {
       return "IX";
     }
+    if (number == 40) {
+      return "XL";
+    }
     Stream.of(RomanSymbol.values())
         .sorted(Collections.reverseOrder())
         .filter(romanSymbol -> number / romanSymbol.value > 0)
