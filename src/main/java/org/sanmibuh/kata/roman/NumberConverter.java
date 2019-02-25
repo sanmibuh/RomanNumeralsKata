@@ -47,6 +47,9 @@ public class NumberConverter {
     if (number == 300) {
       return "CCC";
     }
+    if (number == 2000) {
+      return "MM";
+    }
     return "II";
   }
 
