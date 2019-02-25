@@ -30,6 +30,7 @@ public class NumberConverterTest {
         Arguments.of(30, "XXX"),
         Arguments.of(40, "XL"),
         Arguments.of(50, "L"),
+        Arguments.of(90, "XC"),
         Arguments.of(100, "C"),
         Arguments.of(200, "CC"),
         Arguments.of(300, "CCC"),

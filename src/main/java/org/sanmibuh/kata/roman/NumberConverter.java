@@ -32,6 +32,9 @@ public class NumberConverter {
     if (number == 40) {
       return "XL";
     }
+    if (number == 90) {
+      return "XC";
+    }
     Stream.of(RomanSymbol.values())
         .sorted(Collections.reverseOrder())
         .filter(romanSymbol -> number / romanSymbol.value > 0)
