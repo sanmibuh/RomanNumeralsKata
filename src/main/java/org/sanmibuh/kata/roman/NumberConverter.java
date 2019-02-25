@@ -1,6 +1,6 @@
 package org.sanmibuh.kata.roman;
 
-import java.util.Optional;
+import java.util.Collections;
 import java.util.stream.Stream;
 
 public class NumberConverter {
@@ -19,41 +19,23 @@ public class NumberConverter {
     RomanSymbol(final int value) {
       this.value = value;
     }
-
-    public static Optional<RomanSymbol> fromValue(final int value) {
-      return Stream.of(RomanSymbol.values())
-          .filter(romanSymbol -> romanSymbol.value == value)
-          .findFirst();
-    }
   }
 
   public String toRoman(final int number) {
-    return RomanSymbol.fromValue(number).map(RomanSymbol::name).orElse(makeExceptions(number));
-  }
+    final StringBuilder romanNumber = new StringBuilder();
 
-  private String makeExceptions(final int number) {
-    if (number == 3) {
-      return "III";
-    }
-    if (number == 20) {
-      return "XX";
-    }
-    if (number == 30) {
-      return "XXX";
-    }
-    if (number == 200) {
-      return "CC";
-    }
-    if (number == 300) {
-      return "CCC";
-    }
-    if (number == 2000) {
-      return "MM";
-    }
-    if (number == 3000) {
-      return "MMM";
-    }
-    return "II";
+    Stream.of(RomanSymbol.values())
+        .sorted(Collections.reverseOrder())
+        .filter(romanSymbol -> number / romanSymbol.value > 0)
+        .findFirst().ifPresent(romanSymbol -> {
+      final int times = number / romanSymbol.value;
+      for (int i = 0; i < times; i++) {
+        romanNumber.append(romanSymbol);
+      }
+      romanNumber.append(toRoman(number - (romanSymbol.value * times)));
+    });
+
+    return romanNumber.toString();
   }
 
 }
