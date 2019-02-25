@@ -3,19 +3,11 @@ package org.sanmibuh.kata.roman;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.stream.Stream;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 public class NumberConverterTest {
-
-  private static NumberConverter numberConverter;
-
-  @BeforeAll
-  public static void setUp() {
-    numberConverter = new NumberConverter();
-  }
 
   private static Stream<Arguments> numbersToConvert() {
     return Stream.of(
@@ -48,7 +40,7 @@ public class NumberConverterTest {
   @ParameterizedTest
   @MethodSource("numbersToConvert")
   public void shouldToRomanReturnExpectedRomanNumber(final int number, final String expectedRomanNumber) {
-    final String roman = numberConverter.toRoman(number);
+    final String roman = new NumberConverter(number).toRoman();
     assertEquals(expectedRomanNumber, roman);
   }
 
