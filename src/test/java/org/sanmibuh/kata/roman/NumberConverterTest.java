@@ -24,6 +24,7 @@ public class NumberConverterTest {
         Arguments.of(3, "III"),
         Arguments.of(5, "V"),
         Arguments.of(10, "X"),
+        Arguments.of(20, "XX"),
         Arguments.of(50, "L"),
         Arguments.of(100, "C"),
         Arguments.of(500, "D"),

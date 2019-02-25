@@ -35,6 +35,9 @@ public class NumberConverter {
     if (number == 3) {
       return "III";
     }
+    if (number == 20) {
+      return "XX";
+    }
     return "II";
   }
 
