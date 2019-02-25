@@ -34,7 +34,8 @@ public class NumberConverterTest {
         Arguments.of(1000, "M"),
         Arguments.of(2000, "MM"),
         Arguments.of(3000, "MMM"),
-        Arguments.of(3333, "MMMCCCXXXIII")
+        Arguments.of(3333, "MMMCCCXXXIII"),
+        Arguments.of(3888, "MMMDCCCLXXXVIII")
     );
   }
 
