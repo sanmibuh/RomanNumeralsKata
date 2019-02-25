@@ -28,7 +28,7 @@ public class NumberConverter {
   }
 
   public String toRoman(final int number) {
-    return RomanSymbol.fromValue(number).map(RomanSymbol::name).orElse(null);
+    return RomanSymbol.fromValue(number).map(RomanSymbol::name).orElse("II");
   }
 
 }

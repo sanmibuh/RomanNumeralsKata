@@ -20,6 +20,7 @@ public class NumberConverterTest {
   private static Stream<Arguments> numbersToConvert() {
     return Stream.of(
         Arguments.of(1, "I"),
+        Arguments.of(2, "II"),
         Arguments.of(5, "V"),
         Arguments.of(10, "X"),
         Arguments.of(50, "L"),
