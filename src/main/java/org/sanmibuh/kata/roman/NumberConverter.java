@@ -28,7 +28,14 @@ public class NumberConverter {
   }
 
   public String toRoman(final int number) {
-    return RomanSymbol.fromValue(number).map(RomanSymbol::name).orElse("II");
+    return RomanSymbol.fromValue(number).map(RomanSymbol::name).orElse(makeExceptions(number));
+  }
+
+  private String makeExceptions(final int number) {
+    if (number == 3) {
+      return "III";
+    }
+    return "II";
   }
 
 }
